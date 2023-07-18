@@ -10,8 +10,9 @@ window = Tk()
 # button3.pack(side=LEFT)
 
 btnList =[]  # [None,None,None]
-for i in range(0, 15):
+for i in range(0, 5):
     btnList.append(Button(window, text='button'+str(i+1)))
 for btn in btnList:
-    btn.pack(side=RIGHT)
+    btn.pack(side=TOP, fill=X, padx=20,pady=10)
+
 window.mainloop()
